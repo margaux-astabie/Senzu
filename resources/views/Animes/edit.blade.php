@@ -83,7 +83,7 @@
 
         <form action="{{ route('animes.update', $anime->id) }}" method="POST">
             @csrf
-            @method('PUT')
+            
 
             <div class="name">
                 <h2>{{ $anime->name }}</h2>
