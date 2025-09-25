@@ -4,11 +4,16 @@
     @csrf
     <h1>{{ $anime->name }}</h1>
 
-    <label for="Rating">note:</label>
-    <input type="number" id="rating" name="rating" value="{{ $anime->rating }}" required><br><br>
-
-    <label for="commentaires">Commentaire:</label>
-    <input type="text" id="commentaires" name="commentaires" required><br><br>
+    <label for="rating">Ma Note :</label>
+<select name="rating" id="rating" required>
+    <option value="">-- Choisir une note --</option>
+    @for ($i = 1; $i <= 5; $i++)
+        <option value="{{ $i }}">{{ $i }}</option>
+    @endfor
+</select>
+<br><br>
+    <label for="description">Commentaire:</label>
+    <input type="text" id="description" name="description" required><br><br>
 
     <input type="submit" value="Mettre à jour l'Animé.'">
     </form> 

@@ -15,34 +15,8 @@
         <option value="{{ $i }}">{{ $i }}</option>
     @endfor
 </select>
-<style>
-    .star-rating {
-        direction: rtl;
-        display: inline-flex;
-        font-size: 30px;
-    }
 
-    .star-rating input {
-        display: none;
-    }
 
-    .star-rating label {
-        cursor: pointer;
-        color: #ccc;
-    }
-
-    .star-rating input:checked ~ label,
-    .star-rating label:hover,
-    .star-rating label:hover ~ label {
-        color: #ffc107;
-    }
-</style>
-
-<div class="star-rating">
-    @for ($i = 5; $i >= 1; $i--)
-        <input type="radio" id="star{{ $i }}" name="rating" value="{{ $i }}" @if(old('rating', $anime->rating ?? '') == $i) checked @endif>
-        <label for="star{{ $i }}">★</label>
-    @endfor
 </div>
 <br><br>
     <label for="commentaires">Commentaire:</label>
