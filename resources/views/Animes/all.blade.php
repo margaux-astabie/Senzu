@@ -19,4 +19,4 @@
             </a>
         </li>
     @endforeach
-    <a href="{{ route('animes.create', $anime->id) }}">Ajouter un animé</a>
+    <a href="{{ route('animes.create') }}">Ajouter un animé</a>
