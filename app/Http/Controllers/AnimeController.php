@@ -47,9 +47,6 @@ class AnimeController extends Controller
     {
         $Anime = Anime::findOrFail($id);
         $Anime->update([
-            'name' => $request->input('name'),
-            'description' => $request->input('description'),
-            'image_url' => $request->input('image_url'),
             'rating' => $request->input('rating'),
         ]);
         return redirect()->route('animes.list');
