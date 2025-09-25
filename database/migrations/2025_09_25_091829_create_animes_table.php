@@ -11,7 +11,8 @@ return new class extends Migration
     Schema::create('animes', function (Blueprint $table) {
         $table->id();
         $table->string('name');          
-        $table->text('description')->nullable();     
+        $table->text('description')->nullable();
+        $table->text('comments')->nullable();     
         $table->text('image_url')->nullable();;    
         $table->float('rating')->default(0);  
         $table->timestamps();

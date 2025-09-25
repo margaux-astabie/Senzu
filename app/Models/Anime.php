@@ -10,6 +10,7 @@ class Anime extends Model
         'image_url', 
         'name',
         'description',
+        'comments',
         'rating',
     ];
 }
