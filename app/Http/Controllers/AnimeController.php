@@ -30,6 +30,7 @@ class AnimeController extends Controller
         Anime::create([
             'name' => $request->input('name'),
             'description' => $request->input('description'),
+            'comments' => $request->input('comments'),
             'image_url' => $request->input('image_url'),
             'rating' => $request->input('rating'),
         ]);
@@ -48,6 +49,7 @@ class AnimeController extends Controller
         $Anime = Anime::findOrFail($id);
         $Anime->update([
             'rating' => $request->input('rating'),
+            'comments' => $request->input('comments'),
         ]);
         return redirect()->route('list');
     }

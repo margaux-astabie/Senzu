@@ -14,8 +14,9 @@
                 <br>
                 <h2>Ma Note:</h2> {{ $anime->rating }} / 5
                 <br>
-                <h2>Mon Commentaire:</h2> {{ $anime->commentaires }}
+                <h2>Mon Commentaire:</h2> {{ $anime->comments }}
                 <a href="{{ route('animes.edit', $anime->id) }}">Editer</a>
             </a>
         </li>
     @endforeach
+    <a href="{{ route('animes.create', $anime->id) }}">Ajouter un animé</a>

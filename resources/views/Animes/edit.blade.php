@@ -95,8 +95,8 @@
             </div>
 
             <div class="form-group">
-                <label for="commentaires">Commentaire :</label>
-                <textarea id="commentaires" name="commentaires" rows="4" required>{{ $anime->commentaires }}</textarea>
+                <label for="comments">Commentaire :</label>
+                <textarea id="comments" name="comments" rows="4" required>{{ $anime->comments }}</textarea>
             </div>
 
             <button type="submit">Mettre à jour</button>

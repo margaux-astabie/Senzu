@@ -129,8 +129,8 @@
             </div>
 
 
-            <label for="commentaires">Commentaire :</label>
-            <textarea id="commentaires" name="commentaires" rows="3" required></textarea>
+            <label for="comments">Commentaire :</label>
+            <textarea id="comments" name="comments" rows="3" required></textarea>
 
 
             <label for="image_url">Image URL :</label>
