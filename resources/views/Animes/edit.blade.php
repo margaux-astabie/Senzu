@@ -79,7 +79,7 @@
 </head>
 <body>
     <div class="edit-container">
-        <h1>🎬 Modifier ma note</h1>
+        <h1>Modifier ma note</h1>
 
         <form action="{{ route('animes.update', $anime->id) }}" method="POST">
             @csrf
@@ -99,7 +99,7 @@
                 <textarea id="commentaires" name="commentaires" rows="4" required>{{ $anime->commentaires }}</textarea>
             </div>
 
-            <button type="submit">✅ Mettre à jour</button>
+            <button type="submit">Mettre à jour</button>
         </form>
     </div>
 </body>
