@@ -98,8 +98,7 @@
                 <label for="commentaires">Commentaire :</label>
                 <textarea id="commentaires" name="commentaires" rows="4" required>{{ $anime->commentaires }}</textarea>
             </div>
-    <label for="rating">Ma Note :</label>
-    
+
             <button type="submit">✅ Mettre à jour</button>
         </form>
     </div>
