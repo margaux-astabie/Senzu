@@ -33,7 +33,7 @@ class AnimeController extends Controller
             'image_url' => $request->input('image_url'),
             'rating' => $request->input('rating'),
         ]);
-        return redirect()->route('animes.list');
+        return redirect()->route('list');
     }
     
 
@@ -49,7 +49,7 @@ class AnimeController extends Controller
         $Anime->update([
             'rating' => $request->input('rating'),
         ]);
-        return redirect()->route('animes.list');
+        return redirect()->route('list');
     }
 
     public function delete($id)

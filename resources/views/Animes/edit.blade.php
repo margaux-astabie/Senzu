@@ -98,6 +98,16 @@
                 <label for="commentaires">Commentaire :</label>
                 <textarea id="commentaires" name="commentaires" rows="4" required>{{ $anime->commentaires }}</textarea>
             </div>
+    <label for="rating">Ma Note :</label>
+<select name="rating" id="rating" required>
+    <option value="">-- Choisir une note --</option>
+    @for ($i = 1; $i <= 5; $i++)
+        <option value="{{ $i }}">{{ $i }}</option>
+    @endfor
+</select>
+<br><br>
+    <label for="description">Commentaire:</label>
+    <input type="text" id="description" name="description" required><br><br>
 
             <button type="submit">✅ Mettre à jour</button>
         </form>
