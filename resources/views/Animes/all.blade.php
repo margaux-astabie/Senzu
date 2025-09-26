@@ -102,10 +102,24 @@
         .anime-actions a:hover {
             color: #190933;
         }
+
+        
+        .logo-container {
+
+  justify-content: center; /* centre horizontalement */
+  margin-bottom: 15px;      /* espace sous le logo */
+}
+
+.title-logo {
+  width: 80px;   /* ajuste la taille à ton goût */
+  height: 70px;
+}
+
     </style>
 </head>
 <body>
     <header>
+          <img src="../../../logo-senzu.png" alt="logo" class="title-logo">
         <h1>Senzu</h1>
         <a href="{{ route('animes.create') }}">+ Ajouter un animé</a>
     </header>
