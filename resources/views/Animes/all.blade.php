@@ -121,6 +121,8 @@
 
     </style>
 </head>
+<link rel="icon" type="image/png" href="{{ asset('logo-senzu.png') }}">
+
 <body>
     <header>
           <img src="../../../logo-senzu.png" alt="logo" class="title-logo">
