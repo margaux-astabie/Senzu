@@ -29,7 +29,6 @@
 
         header a {
             color: #fff;
-            text-decoration: none;
             font-weight: bold;
             background: #00e054;
             padding: 8px 14px;
@@ -52,8 +51,7 @@
 
         .anime-card {
             background: #1c252e;
-            border-radius: 10px;
-            overflow: hidden;
+            border-radius: 10px;    
             box-shadow: 0 4px 10px rgba(0,0,0,0.4);
             display: flex;
             flex-direction: column;
