@@ -21,7 +21,7 @@
         }
 
         .edit-container h1 {
-            color: #FF7D00;
+            color: #665687;
             font-size: 1.8rem;
             text-align: center;
             margin-bottom: 20px;
@@ -59,6 +59,32 @@
             resize: none;
         }
 
+        .star-rating {
+            direction: rtl;
+            display: inline-flex;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+
+        .star-rating input {
+            display: none;
+        }
+
+
+        .star-rating label {
+            cursor: pointer;
+            color: #665687;
+            transition: color 0.2s;
+        }
+
+
+        .star-rating input:checked ~ label,
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: #ff7d00; /* jaune doré */
+        }
+
         button {
             width: 100%;
             padding: 12px;
@@ -89,9 +115,12 @@
                 <h2>{{ $anime->name }}</h2>
             </div>
 
-            <div class="form-group">
-                <label for="rating">Note :</label>
-                <input type="number" id="rating" name="rating" value="{{ $anime->rating }}" min="0" max="10" required>
+            <label for="rating">Ma Note :</label>
+            <div class="star-rating">
+                @for ($i = 5; $i >= 1; $i--)
+                    <input type="radio" id="star{{ $i }}" name="rating" value="{{ $i }}" @if(old('rating') == $i) checked @endif>
+                    <label for="star{{ $i }}">★</label>
+                @endfor
             </div>
 
             <div class="form-group">
