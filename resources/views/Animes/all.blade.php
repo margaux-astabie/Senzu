@@ -6,7 +6,7 @@
     <title>Senzu - Mes Animes</title>
     <style>
         body {
-            background-color: #14181c;
+            background-color: #190933;
             color: #d1d5db;
             font-family: Arial, sans-serif;
             margin: 0;
@@ -14,7 +14,7 @@
         }
 
         header {
-            background: #202830;
+            background: #190933;
             padding: 20px 40px;
             display: flex;
             justify-content: space-between;
@@ -23,21 +23,21 @@
         }
 
         header h1 {
-            color: #00e054;
+            color: #ffecd1;
             margin: 0;
         }
 
         header a {
-            color: #fff;
+            color: #ffecd1;
             font-weight: bold;
-            background: #00e054;
+            background: #b084cc;
             padding: 8px 14px;
             border-radius: 6px;
             transition: background 0.2s;
         }
 
         header a:hover {
-            background: #00b843;
+            background: #665687;
         }
 
         .anime-list {
@@ -50,7 +50,7 @@
         }
 
         .anime-card {
-            background: #1c252e;
+            background: #b084cc;
             border-radius: 10px;    
             box-shadow: 0 4px 10px rgba(0,0,0,0.4);
             display: flex;
@@ -81,7 +81,7 @@
 
         .anime-content p {
             font-size: 0.9rem;
-            color: #9ca3af;
+            color: #ffecd1;
             margin-bottom: 10px;
         }
 
@@ -89,24 +89,24 @@
             display: flex;
             justify-content: space-between;
             padding: 12px 15px;
-            background: #202830;
+            background: #665687;
         }
 
         .anime-actions a {
-            color: #00e054;
+            color: #190933;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.2s;
         }
 
         .anime-actions a:hover {
-            color: #00b843;
+            color: #190933;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>🎬 Senzu</h1>
+        <h1>Senzu</h1>
         <a href="{{ route('animes.create') }}">+ Ajouter un animé</a>
     </header>
 
@@ -117,7 +117,7 @@
                     <img src="{{ $anime->image_url }}" alt="{{ $anime->name }}">
                     <div class="anime-content">
                         <h2>
-                            <a href="{{ route('animes.show', $anime->id) }}" style="color:#00e054; text-decoration:none;">
+                            <a href="{{ route('animes.show', $anime->id) }}" style="color:#190933; text-decoration:none;">
                                 {{ $anime->name }}
                             </a>
                         </h2>
@@ -126,8 +126,8 @@
                         <p><strong>Synopsis :</strong> {{ Str::limit($anime->description, 100) }}</p>
                     </div>
                     <div class="anime-actions">
-                        <a href="{{ route('animes.edit', $anime->id) }}">✏️ Editer</a>
-                        <a href="{{ route('animes.delete', $anime->id) }}">🗑️ Retirer</a>
+                        <a href="{{ route('animes.edit', $anime->id) }}">Editer</a>
+                        <a href="{{ route('animes.delete', $anime->id) }}">Retirer</a>
                     </div>
                 </div>
             @endforeach
