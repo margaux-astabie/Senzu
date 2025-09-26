@@ -58,7 +58,7 @@ class AnimeController extends Controller
     {
         $anime = Anime::findOrFail($id);
         $anime->delete();
-        return 'Cet animé a été supprimé avec succès !';
+        return redirect()->route('list');
     }
 }
 
