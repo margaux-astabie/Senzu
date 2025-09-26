@@ -131,6 +131,7 @@
     </header>
 
     <main>
+           <h2 style="text-align: center; color: #ffecd1;">Viens renseigner ta découverte animé du moment !</h2>
         <div class="anime-list">
             @foreach ($animes as $anime)
                 <div class="anime-card">
