@@ -6,7 +6,7 @@
     <title>Modifier ma note</title>
     <style>
         body {
-            background-color: #002245ff;
+            background-color: #190933;
             color: #d1d5db;
             font-family: Arial, sans-serif;
         }
@@ -14,14 +14,14 @@
         .edit-container {
             max-width: 600px;
             margin: 40px auto;
-            background: #b51212ff;
+            background: #ffecd1;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.4);
         }
 
         .edit-container h1 {
-            color: #fff;
+            color: #FF7D00;
             font-size: 1.8rem;
             text-align: center;
             margin-bottom: 20px;
@@ -29,7 +29,7 @@
 
         .name h2 {
             text-align: center;
-            color: #ffffffff;
+            color: #665687;
             margin-bottom: 20px;
         }
 
@@ -41,7 +41,7 @@
             display: block;
             font-weight: bold;
             margin-bottom: 8px;
-            color: #d1d5db;
+            color: #665687;
         }
 
         input[type="number"],
@@ -51,7 +51,7 @@
             border: none;
             border-radius: 6px;
             font-size: 1rem;
-            background: #202830;
+            background:#190933;
             color: #fff;
         }
 
@@ -62,8 +62,8 @@
         button {
             width: 100%;
             padding: 12px;
-            background-color: #ffffffff;
-            color: #000;
+            background-color: #B084CC;
+            color: #190933;
             border: none;
             border-radius: 6px;
             font-size: 1.1rem;
@@ -73,7 +73,7 @@
         }
 
         button:hover {
-            background-color: #a1a1a1ff;
+            background-color: #665687;
         }
     </style>
 </head>
