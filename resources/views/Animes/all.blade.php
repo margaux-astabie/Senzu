@@ -56,6 +56,7 @@
             display: flex;
             flex-direction: column;
             transition: transform 0.2s;
+             overflow: hidden;
         }
 
         .anime-card:hover {
@@ -66,6 +67,9 @@
             width: 100%;
             height: 350px;
             object-fit: cover;
+            border-top-left-radius: 10px;  
+            border-top-right-radius: 10px; 
+            
         }
 
         .anime-content {
