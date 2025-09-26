@@ -56,6 +56,7 @@
             display: flex;
             flex-direction: column;
             transition: transform 0.2s;
+             overflow: hidden;
         }
 
         .anime-card:hover {
@@ -66,6 +67,9 @@
             width: 100%;
             height: 350px;
             object-fit: cover;
+            border-top-left-radius: 10px;  
+            border-top-right-radius: 10px; 
+            
         }
 
         .anime-content {
@@ -102,15 +106,32 @@
         .anime-actions a:hover {
             color: #190933;
         }
+
+        
+        .logo-container {
+
+  justify-content: center; /* centre horizontalement */
+  margin-bottom: 15px;      /* espace sous le logo */
+}
+
+.title-logo {
+  width: 80px;   /* ajuste la taille à ton goût */
+  height: 70px;
+}
+
     </style>
 </head>
+<link rel="icon" type="image/png" href="{{ asset('logo-senzu.png') }}">
+
 <body>
     <header>
+          <img src="../../../logo-senzu.png" alt="logo" class="title-logo">
         <h1>Senzu</h1>
         <a href="{{ route('animes.create') }}">+ Ajouter un animé</a>
     </header>
 
     <main>
+           <h2 style="text-align: center; color: #ffecd1;">Viens renseigner ta découverte animé du moment !</h2>
         <div class="anime-list">
             @foreach ($animes as $anime)
                 <div class="anime-card">
