@@ -16,6 +16,7 @@
                 <br>
                 <h2>Mon Commentaire:</h2> {{ $anime->comments }}
                 <a href="{{ route('animes.edit', $anime->id) }}">Editer</a>
+                <a href="{{ route('animes.delete', $anime->id) }}">Retirer l'animé</a>
             </a>
         </li>
     @endforeach

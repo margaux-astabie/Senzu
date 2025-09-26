@@ -58,7 +58,7 @@ class AnimeController extends Controller
     {
         $anime = Anime::findOrFail($id);
         $anime->delete();
-        return 'Pokémon deleted!';
+        return 'Cet animé a été supprimé avec succès !';
     }
 }
 

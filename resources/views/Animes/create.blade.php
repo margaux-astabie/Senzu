@@ -138,6 +138,7 @@
 
 
             <button type="submit" class="submit-btn">✅ Ajouter l’anime</button>
+
         </form>
     </div>
 </body>
