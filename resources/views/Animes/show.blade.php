@@ -7,7 +7,7 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #190933; /* fond global sombre */
-            color: #FFECD1; /* texte clair */
+            color: #190933; /* texte clair */
             margin: 0;
             padding: 20px;
         }
@@ -15,7 +15,7 @@
         .anime-container {
             max-width: 900px;
             margin: 50px auto;
-            background: #665687; /* fond carte */
+            background: #FFECD1; /* fond carte */
             border-radius: 12px;
             padding: 20px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.6);
@@ -27,7 +27,7 @@
         }
 
         .anime-header h1 {
-            color: #B084CC; /* titre violet clair */
+            color: #665687; /* titre violet clair */
             margin-bottom: 10px;
         }
 
@@ -50,7 +50,7 @@
 
         .anime-details h2 {
             margin-top: 0;
-            color: #B084CC; /* titres secondaires */
+            color: #665687; /* titres secondaires */
         }
 
         .anime-details p {
@@ -93,7 +93,7 @@
 
         .delete-btn {
             background: #ff4d4d; /* rouge pour supprimer */
-            color: #FFECD1;
+            color: #190933;
         }
 
         .delete-btn:hover {
@@ -123,9 +123,9 @@
         </div>
 
         <div class="actions">
-            <a href="{{ route('list') }}" class="back-btn">⬅ Retour</a>
-            <a href="{{ route('animes.edit', $anime->id) }}" class="edit-btn">✏️ Modifier</a>
-            <a href="{{ route('animes.delete', $anime->id) }}" class="delete-btn">❌ Supprimer</a>
+            <a href="{{ route('list') }}" class="back-btn">Retour</a>
+            <a href="{{ route('animes.edit', $anime->id) }}" class="edit-btn">Modifier</a>
+            <a href="{{ route('animes.delete', $anime->id) }}" class="delete-btn">Supprimer</a>
         </div>
     </div>
 </body>
